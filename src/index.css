@@ -3,7 +3,7 @@
 Fonts
 ===============
 */
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;600;700&family=Livvic:wght@600;700&family=Nunito+Sans:wght@300;600;800&display=swap');
 
 /*
 =============== 
@@ -13,13 +13,18 @@ Variables
 
 :root {
   /* primary/main color */
-  --clr-primary-soft-blue: hsl(231, 69%, 60%);
-  --clr-primary-soft-red: hsl(0, 94%, 66%);
-  --clr-primary-grayish-blue: hsl(229, 8%, 60%);
-  --clr-primary-dark-grayish-blue: hsl(231, 5%, 29%);
-  --clr-primary-very-dark-blue: hsl(229, 31%, 21%);
+  --clr-primary-midnight-green: hsl(186, 98%, 17%);
+  --clr-primary-light-coral: hsl(0, 87%, 73%);
+  --clr-primary-white: hsl(0, 0%, 100%);
 
-  --ff-primary: 'Rubik', sans-serif;
+  /* secondary color */
+  --clr-primary-rapture-blue: hsl(179, 42%, 63%);
+  --clr-primary-police-blue: hsl(187, 41%, 29%);
+  --clr-primary-jungle-blue: hsl(186, 100%, 14%);
+  --clr-primary-sacramento-state-green: hsl(186, 96%, 10%);
+  --clr-primary-dark-green: hsl(186, 100%, 8%);
+
+  --ff-primary: 'Livvic', sans-serif;
   --transition: all 0.3s linear;
   --spacing: 0.1rem;
   --radius: 0.25rem;
@@ -69,25 +74,34 @@ h1,
 h2,
 h3,
 h4 {
-  letter-spacing: var(--spacing);
-  text-transform: capitalize;
-  line-height: 1.25;
+  font-weight: 700;
   margin-bottom: 0.75rem;
 }
 h1 {
-  font-size: 3rem;
+  font-size: 100px;
+  line-height: 100px;
 }
 h2 {
-  font-size: 2rem;
+  font-size: 64px;
+  line-height: 56px;
 }
 h3 {
-  font-size: 1.5rem;
+  font-size: 48px;
+  line-height: 48px;
 }
 h4 {
-  font-size: 0.875rem;
+  font-size: 18px;
+  line-height: 28px;
 }
 p {
-  margin-bottom: 1.25rem;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+}
+.body2 {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
 }
 .btn {
   background: var(--clr-primary-soft-blue);
