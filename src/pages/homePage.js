@@ -1,7 +1,16 @@
 import React from 'react';
+import { useGlobalContext } from '../context';
+import FindTalent from '../components/FindTalent';
 
-const homePage = () => {
-  return <div></div>;
+const HomePage = () => {
+  const { isSidebarOpen } = useGlobalContext();
+  return (
+    <main
+    // className={`${isSidebarOpen ? 'show-body-overlay' : 'body-overlay'}`}
+    >
+      <FindTalent />
+    </main>
+  );
 };
 
-export default homePage;
+export default HomePage;

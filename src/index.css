@@ -98,6 +98,7 @@ p {
   font-weight: 600;
   font-size: 18px;
   line-height: 28px;
+  color: var(--clr-primary-white);
 }
 .body2 {
   font-weight: 600;
@@ -114,6 +115,15 @@ p {
   letter-spacing: 0.05rem;
   font-weight: 600;
   cursor: pointer;
+  transition: var(--transition);
+}
+.btn:hover {
+  background: var(--clr-primary-white);
+  color: var(--clr-primary-sacramento-state-green);
+}
+.line {
+  border-top: 2px solid var(--clr-primary-rapture-blue);
+  width: 3rem;
 }
 .section-center {
   width: 90vw;
@@ -133,7 +143,19 @@ p {
 Styles
 ===============
 */
-
+.body-overlay {
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.5);
+}
+.show-body-overlay {
+  display: block;
+}
 /*
 =============== 
 Navbar
@@ -183,6 +205,10 @@ nav {
   }
   .single-nav-link {
     color: var(--clr-primary-white);
+    transition: var(--transition);
+  }
+  .single-nav-link:hover {
+    color: var(--clr-primary-light-coral);
   }
   .nav-toggle {
     display: none;
@@ -193,6 +219,9 @@ nav {
   }
   .nav-contact-btn-link {
     color: var(--clr-primary-white);
+  }
+  .nav-contact-btn-link:hover {
+    color: var(--clr-primary-sacramento-state-green);
   }
 }
 @media screen and (min-width: 900px) {
@@ -225,6 +254,10 @@ nav {
 }
 .single-sidebar-link {
   color: var(--clr-primary-white);
+  transition: var(--transition);
+}
+.single-sidebar-link:hover {
+  color: var(--clr-primary-light-coral);
 }
 .sidebar-link {
   margin-bottom: 1.5rem;
@@ -232,7 +265,10 @@ nav {
 }
 .sidebar-contact-btn {
   color: var(--clr-primary-white);
-  width: 5rem;
+}
+.sidebar-contact-btn:hover {
+  background: var(--clr-primary-white);
+  color: var(--clr-primary-sacramento-state-green);
 }
 .sidebar-inner-container {
   position: relative;
@@ -252,8 +288,109 @@ nav {
   right: 10%;
   top: -100%;
 }
+
 @media screen and (min-width: 700px) {
   .show-sidebar {
     transform: translate(120%);
+  }
+}
+
+/*
+=============== 
+Homepage
+===============
+*/
+
+/* Find Talent Section */
+.find-talent-container {
+  background: var(--clr-primary-midnight-green);
+  padding: 3rem 2rem;
+  padding-bottom: 0;
+}
+.find-talend-line {
+  display: none;
+}
+.find-talent-image1 {
+  display: none;
+}
+.find-talent-main h1 {
+  font-size: 2.5rem;
+  width: 20rem;
+  line-height: 2.6rem;
+  text-align: center;
+  margin: 0 auto;
+}
+.find-talent-main h1 span {
+  color: var(--clr-primary-light-coral);
+}
+.find-talent-main p {
+  text-align: center;
+  margin: 2rem auto;
+  font-size: 1.2rem;
+}
+.find-talent-image2-container {
+  display: grid;
+  justify-content: center;
+}
+@media screen and (min-width: 700px) {
+  .find-talent-main p {
+    text-align: center;
+    margin: 2rem auto;
+    margin-bottom: 8rem;
+    font-size: 1rem;
+    width: 28rem;
+  }
+}
+@media screen and (min-width: 900px) {
+  .find-talent-image1 {
+    position: absolute;
+    display: inline-block;
+    left: -7rem;
+    max-width: 60%;
+    max-height: 60%;
+  }
+  .find-talent-image1 {
+    max-width: 60%;
+    max-height: 60%;
+  }
+  .find-talend-line {
+    display: inline-block;
+  }
+  .find-talent-container {
+    position: relative;
+  }
+  .find-talent-main {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    justify-content: center;
+    width: 70vw;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+  }
+  .find-talent-main p {
+    text-align: left;
+    margin: 2rem auto;
+    margin-bottom: 0;
+    font-size: 1rem;
+    width: 22rem;
+  }
+  .find-talent-info-container {
+    display: grid;
+    grid-row: 1fr;
+    align-items: center;
+    justify-content: center;
+  }
+  .find-talent-main h1 {
+    font-size: 2.5rem;
+    width: 20rem;
+    line-height: 2.6rem;
+    text-align: left;
+    margin: 0;
+  }
+  .find-talent-image2-container {
+    display: grid;
+    justify-content: right;
+    margin-right: 6rem;
   }
 }

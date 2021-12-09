@@ -2,18 +2,17 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../assets/logo.svg';
 import picture from '../assets/bg-pattern-about-1-mobile-nav-1.svg';
-//src/assets/bg-pattern-about-1-mobile-nav-1.svg
+import { useGlobalContext } from '../context';
 import { FaBars, FaTimes } from 'react-icons/fa';
 
 const Navbar = () => {
-  const [isSidebarOpen, setSidebarOpen] = useState(false);
+  const {
+    openSidebar,
+    closeSidebar,
+    isSidebarOpen,
+    setSidebarOpen,
+  } = useGlobalContext();
 
-  const openSidebar = () => {
-    setSidebarOpen(true);
-  };
-  const closeSidebar = () => {
-    setSidebarOpen(false);
-  };
   return (
     <>
       <nav className='nav-container'>
@@ -41,11 +40,9 @@ const Navbar = () => {
             </li>
           </ul>
           <div className='nav-btn-container'>
-            <button className='btn'>
-              <Link className='nav-contact-btn-link' to='/contact'>
-                contact us
-              </Link>
-            </button>
+            <Link className='nav-contact-btn-link btn' to='/contact'>
+              contact us
+            </Link>
           </div>
         </div>
       </nav>
@@ -74,11 +71,13 @@ const Navbar = () => {
                 </Link>
               </li>
             </ul>
-            <button className='btn' onClick={() => setSidebarOpen(false)}>
-              <Link className='sidebar-contact-btn' to='/contact'>
-                contact us
-              </Link>
-            </button>
+            <Link
+              className='sidebar-contact-btn btn'
+              to='/contact'
+              onClick={() => setSidebarOpen(false)}
+            >
+              contact us
+            </Link>
             <img className='sidebar-img' src={picture} alt='picture' />
           </div>
         </div>
