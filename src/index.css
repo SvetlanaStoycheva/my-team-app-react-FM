@@ -394,3 +394,105 @@ Homepage
     margin-right: 6rem;
   }
 }
+
+/* Build Team Section */
+.build-team-container {
+  position: relative;
+  background: var(--clr-primary-jungle-blue);
+  padding: 3rem;
+}
+.build-team-line {
+  border-top: 2px solid var(--clr-primary-light-coral);
+}
+.build-team-container h2 {
+  font-size: 1.8rem;
+  line-height: 2rem;
+  margin: 2rem 0;
+  margin-right: 3rem;
+  width: 50vw;
+}
+.build-team-single-point {
+  display: grid;
+  justify-items: center;
+  margin-bottom: 1rem;
+}
+.build-team-single-point-text h4 {
+  color: var(--clr-primary-light-coral);
+  font-size: 1.1rem;
+  text-align: center;
+}
+.build-team-single-point-text p {
+  font-size: 1rem;
+  text-align: center;
+}
+.build-team-img-container {
+  position: absolute;
+  top: 0;
+  right: -6rem;
+}
+.build-team-point-icon {
+  position: relative;
+  font-size: 2.2rem;
+  color: var(--clr-primary-rapture-blue);
+  z-index: 2;
+}
+.build-team-point-icon::after {
+  position: absolute;
+  content: '';
+  display: block;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background: var(--clr-primary-police-blue);
+  top: 10%;
+  right: -50%;
+  z-index: -1;
+}
+@media screen and (min-width: 700px) {
+  .build-team-container h2 {
+    width: 70vw;
+  }
+  .build-team-single-point {
+    justify-items: center;
+    grid-template-columns: auto 1fr;
+    column-gap: 3rem;
+    align-items: center;
+    margin-bottom: 2rem;
+    width: 80vw;
+  }
+  .build-team-single-point-text h4 {
+    text-align: left;
+  }
+  .build-team-single-point-text p {
+    text-align: left;
+  }
+}
+@media screen and (min-width: 900px) {
+  .build-team-main {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    padding: 3rem;
+  }
+  .build-team-container h2 {
+    width: 30vw;
+  }
+  .build-team-points-container {
+    width: 40vw;
+  }
+  .build-team-single-point {
+    width: 40vw;
+  }
+  .build-team-single-point-text h4 {
+    color: var(--clr-primary-light-coral);
+    font-size: 1rem;
+  }
+  .build-team-single-point-text p {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 25px;
+  }
+  .build-team-img-container {
+    top: 19rem;
+    right: -6rem;
+  }
+}

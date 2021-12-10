@@ -1,6 +1,7 @@
 import React from 'react';
 import { useGlobalContext } from '../context';
-import FindTalent from '../components/FindTalent';
+import FindTalent from '../components/FindTalentHomepage';
+import BuildTeam from '../components/BuildTeamHomepage';
 
 const HomePage = () => {
   const { isSidebarOpen } = useGlobalContext();
@@ -9,6 +10,7 @@ const HomePage = () => {
     // className={`${isSidebarOpen ? 'show-body-overlay' : 'body-overlay'}`}
     >
       <FindTalent />
+      <BuildTeam />
     </main>
   );
 };

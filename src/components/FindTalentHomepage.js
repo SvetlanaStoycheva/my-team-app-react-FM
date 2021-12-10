@@ -1,8 +1,8 @@
 import React from 'react';
-import img1 from '../assets/bg-pattern-home-1.svg';
+import img1 from '../assets/bg-pattern-home-2.svg';
 import img2 from '../assets/bg-pattern-home-2.svg';
 
-const FindTalent = () => {
+const FindTalentHomepage = () => {
   return (
     <section className='find-talent-container'>
       <img src={img1} alt='image' className='find-talent-image1' />
@@ -27,4 +27,4 @@ const FindTalent = () => {
   );
 };
 
-export default FindTalent;
+export default FindTalentHomepage;
