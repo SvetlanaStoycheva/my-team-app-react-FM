@@ -1,5 +1,5 @@
 import React from 'react';
-import img1 from '../assets/bg-pattern-home-2.svg';
+import img1 from '../assets/bg-pattern-home-1.svg';
 import img2 from '../assets/bg-pattern-home-2.svg';
 
 const FindTalentHomepage = () => {
