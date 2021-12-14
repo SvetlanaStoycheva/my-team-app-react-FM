@@ -1,7 +1,8 @@
 import React from 'react';
+import HeaderAboutPage from '../components/HeaderAboutPage';
 
 const AboutPage = () => {
-  return <h2>about</h2>;
+  return <HeaderAboutPage />;
 };
 
 export default AboutPage;
