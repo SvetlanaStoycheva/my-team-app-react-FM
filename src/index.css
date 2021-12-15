@@ -14,6 +14,7 @@ Variables
 :root {
   /* primary/main color */
   --clr-primary-midnight-green: hsl(186, 98%, 17%);
+  --clr-primary-midnight-green2: hsl(186, 91%, 13%);
   --clr-primary-light-coral: hsl(0, 87%, 73%);
   --clr-primary-white: hsl(0, 0%, 100%);
 
@@ -806,5 +807,121 @@ Homepage
 @media screen and (min-width: 1100px) {
   .header-about-container {
     column-gap: 10rem;
+  }
+}
+
+/* Meet Directors Section in About Page */
+.meet-directors-container {
+  position: relative;
+  background: var(--clr-primary-midnight-green2);
+  padding-top: 5rem;
+  padding-bottom: 7rem;
+}
+.directors-bg-image01 {
+  position: absolute;
+  top: -6rem;
+  left: -6rem;
+}
+.meet-directors-container h2 {
+  font-size: 2.2rem;
+  text-align: center;
+}
+.single-director {
+  position: relative;
+  background: var(--clr-primary-dark-green);
+  display: grid;
+  justify-items: center;
+  padding: 2rem;
+  width: 90vw;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
+.director-img {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  border: 2px solid var(--clr-primary-rapture-blue);
+}
+.single-director h4 {
+  color: var(--clr-primary-rapture-blue);
+  font-size: 1.1rem;
+  margin-top: 1rem;
+  line-height: 1rem;
+}
+.single-director p {
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+.director-icon-plus {
+  position: absolute;
+  background: var(--clr-primary-light-coral);
+  padding: 0.7rem;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  transition: var(--transition);
+  color: var(--clr-primary-dark-green);
+  bottom: 0;
+  transform: translateY(50%);
+}
+.director-icon-plus:hover {
+  background: var(--clr-primary-rapture-blue);
+}
+.directors-bg-image02 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+@media screen and (min-width: 700px) {
+  .directors-bg-image01 {
+    top: 0rem;
+  }
+  .meet-directors-container {
+    padding-top: 10rem;
+    padding-bottom: 7rem;
+  }
+  .directors-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 85vw;
+    margin: 0 auto;
+    margin-top: 2rem;
+  }
+  .single-director {
+    justify-items: center;
+    padding: 2rem;
+    width: 40vw;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+  }
+}
+@media screen and (min-width: 900px) {
+  .directors-container {
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 85vw;
+  }
+  .single-director {
+    width: 25vw;
+  }
+  .director-img {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+  .single-director h4 {
+    font-size: 1rem;
+    margin-top: 1rem;
+    line-height: 0.5rem;
+  }
+  .single-director p {
+    font-size: 0.8rem;
+    text-align: center;
+    line-height: 1rem;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .directors-container {
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 80vw;
   }
 }
