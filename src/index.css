@@ -833,8 +833,13 @@ Homepage
   justify-items: center;
   padding: 2rem;
   width: 90vw;
+  height: 14rem;
   margin: 0 auto;
   margin-bottom: 2rem;
+}
+.toggle-part {
+  display: grid;
+  justify-items: center;
 }
 .director-img {
   width: 4rem;
@@ -848,8 +853,21 @@ Homepage
   margin-top: 1rem;
   line-height: 1rem;
 }
-.single-director p {
+.toggle-part p {
   font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+.text-clicked-director {
+  text-align: center;
+  line-height: 1.5rem;
+}
+.toggle-part-social-icons span {
+  font-size: 1.2rem;
+  color: var(--clr-primary-white);
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+.toggle-part-social-icons {
   margin-bottom: 1rem;
 }
 .director-icon-plus {
