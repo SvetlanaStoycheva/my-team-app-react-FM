@@ -866,9 +866,14 @@ Homepage
   color: var(--clr-primary-white);
   margin-left: 0.5rem;
   margin-right: 0.5rem;
+  transition: var(--transition);
+  cursor: pointer;
 }
 .toggle-part-social-icons {
   margin-bottom: 1rem;
+}
+.toggle-part-social-icons span:hover {
+  color: var(--clr-primary-light-coral);
 }
 .director-icon-plus {
   position: absolute;
@@ -941,5 +946,55 @@ Homepage
   .directors-container {
     grid-template-columns: 1fr 1fr 1fr;
     width: 80vw;
+  }
+}
+/* Some clients Section */
+.some-clients-container {
+  position: relative;
+  background: var(--clr-primary-dark-green);
+  padding: 4rem 2rem;
+}
+.bg-image-some-clients {
+  position: absolute;
+  left: -7rem;
+  top: -6rem;
+}
+.some-clients-container h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.clients-logo {
+  width: 8rem;
+  margin-bottom: 2.5rem;
+}
+.clients-logo-container {
+  display: grid;
+  justify-items: center;
+}
+@media screen and (min-width: 700px) {
+  .bg-image-some-clients {
+    left: 0rem;
+    top: -6rem;
+  }
+  .clients-logo-container {
+    grid-template-columns: repeat(5, 1fr);
+    align-items: center;
+  }
+  .clients-logo {
+    width: 5rem;
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 900px) {
+  .clients-logo-container {
+    width: 80vw;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .clients-logo-container {
+    width: 70vw;
   }
 }
