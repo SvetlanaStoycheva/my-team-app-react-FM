@@ -106,3 +106,19 @@ export const directors = [
       '“Empowered teams create truly amazing products. Set the north star and let them follow it.”',
   },
 ];
+
+//Contact Page
+export const contactPoints = [
+  {
+    icon: <MdOutlinePersonalInjury />,
+    title: 'The quality of our talent network',
+  },
+  {
+    icon: <GiAbstract013 />,
+    title: 'Usage & implementation of our software',
+  },
+  {
+    icon: <AiOutlineBarChart />,
+    title: 'How we help drive innovation',
+  },
+];
