@@ -6,6 +6,18 @@
 - Contact form with validation
 
 <p align-items: center>
-    <img src='./readme-images/Screenshot-countries-01.png' width='250'>
+    <img src='./readme-images/Screenshot-team-01.png' width='250'>
+</p>
+<br/>
+<p align-items: center>
+    <img src='./readme-images/Screenshot-team-02.png' width='250'>
+</p>
+<br/>
+<p align-items: center>
+    <img src='./readme-images/Screenshot-team-03.png' width='250'>
+</p>
+<br/>
+<p align-items: center>
+    <img src='./readme-images/Screenshot-team-04.png' width='250'>
 </p>
 <br/>
