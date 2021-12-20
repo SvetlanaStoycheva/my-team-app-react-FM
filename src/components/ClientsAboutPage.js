@@ -9,7 +9,7 @@ import logo5 from '../assets/logo-the-verge.png';
 const ClientsAboutPage = () => {
   return (
     <section className='some-clients-container'>
-      <img src={img} alt='bg-image' className='bg-image-some-clients' />
+      <img src={img} alt='bg-img' className='bg-image-some-clients' />
       <h2>Some of our clients</h2>
       <div className='clients-logo-container'>
         <img src={logo1} alt='client-logo' className='clients-logo' />

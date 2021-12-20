@@ -13,7 +13,7 @@ const HeaderAboutPage = () => {
           deliver incredible outcomes. Talented, diverse teams shape the best
           products and experiences. We’ll bring those teams to you.
         </p>
-        <img src={img} alt='bg-image' className='header-about-bg-image' />
+        <img src={img} alt='bg-img' className='header-about-bg-image' />
       </div>
     </section>
   );

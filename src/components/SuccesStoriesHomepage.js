@@ -7,7 +7,7 @@ import { successStories } from '../utils';
 const SuccesStoriesHomepage = () => {
   return (
     <section className='success-stories-container'>
-      <img src={imgMain1} alt='image' />
+      <img src={imgMain1} alt='bg-img' />
       <div className='success-stories-main'>
         <h2>
           Delivering real results for top companies. Some of our{' '}
@@ -31,7 +31,7 @@ const SuccesStoriesHomepage = () => {
           })}
         </div>
       </div>
-      <img src={imgMain2} alt='image' className='success-stories-bg-img-2' />
+      <img src={imgMain2} alt='bg-img' className='success-stories-bg-img-2' />
     </section>
   );
 };

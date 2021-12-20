@@ -19,7 +19,7 @@ const MeetDirectorsAboutPage = () => {
 
   return (
     <section className='meet-directors-container'>
-      <img src={img01} alt='bg-image' className='directors-bg-image01' />
+      <img src={img01} alt='bg-img' className='directors-bg-image01' />
       <h2>Meet the directors</h2>
       <div className='directors-container'>
         {directors.map((item, index) => {
@@ -29,11 +29,7 @@ const MeetDirectorsAboutPage = () => {
               {/* not clicked */}
               {activeIndex !== index && (
                 <div className='toggle-part'>
-                  <img
-                    src={img}
-                    alt='director photo'
-                    className='director-img'
-                  />
+                  <img src={img} alt='director' className='director-img' />
                   <h4>{name}</h4>
                   <p>{position}</p>
                 </div>
@@ -63,7 +59,7 @@ const MeetDirectorsAboutPage = () => {
           );
         })}
 
-        <img src={img02} alt='bg-image' className='directors-bg-image02' />
+        <img src={img02} alt='bg-img' className='directors-bg-image02' />
       </div>
     </section>
   );

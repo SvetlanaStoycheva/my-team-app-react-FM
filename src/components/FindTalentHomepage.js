@@ -5,7 +5,7 @@ import img2 from '../assets/bg-pattern-home-2.svg';
 const FindTalentHomepage = () => {
   return (
     <section className='find-talent-container'>
-      <img src={img1} alt='image' className='find-talent-image1' />
+      <img src={img1} alt='bg-img' className='find-talent-image1' />
       <div className='find-talent-main'>
         <h1>
           Find the best <span>talent </span>{' '}
@@ -21,7 +21,7 @@ const FindTalentHomepage = () => {
         </div>
       </div>
       <div className='find-talent-image2-container'>
-        <img src={img2} alt='image' className='find-talent-image2' />
+        <img src={img2} alt='bg-img' className='find-talent-image2' />
       </div>
     </section>
   );

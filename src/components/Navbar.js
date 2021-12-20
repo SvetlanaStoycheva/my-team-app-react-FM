@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../assets/logo.svg';
 import picture from '../assets/bg-pattern-about-1-mobile-nav-1.svg';
@@ -78,7 +78,7 @@ const Navbar = () => {
             >
               contact us
             </Link>
-            <img className='sidebar-img' src={picture} alt='picture' />
+            <img className='sidebar-img' src={picture} alt='bg-img' />
           </div>
         </div>
       </aside>

@@ -1015,7 +1015,7 @@ Contact page
 .contact-page-container {
   position: relative;
   background: var(--clr-primary-midnight-green);
-  padding-bottom: 6rem;
+  padding-bottom: 8rem;
 }
 .contact-bg-image-01 {
   display: none;
@@ -1058,7 +1058,6 @@ Contact page
 }
 .contact-form {
   display: grid;
-  /* justify-content: center; */
 }
 .submit-btn {
   background: var(--clr-primary-white);
@@ -1077,16 +1076,32 @@ Contact page
   background: var(--clr-primary-midnight-green);
   padding: 1rem;
   color: var(--clr-primary-white);
-  text-transform: capitalize;
   letter-spacing: var(--spacing);
+}
+.alarm-form-input {
+  color: var(--clr-primary-light-coral);
+  border-bottom: 1px solid var(--clr-primary-light-coral);
 }
 .form-input::placeholder {
   font-family: var(--ff-primary);
   color: var(--clr-primary-rapture-blue);
 }
+.alarm-form-input::placeholder {
+  font-family: var(--ff-primary);
+  color: var(--clr-primary-light-coral);
+}
+.input-alarm-text {
+  font-size: 0.8rem;
+  color: var(--clr-primary-light-coral);
+}
 .input-message {
   height: 8rem;
   line-height: 1.5rem;
+}
+.contact-thank-you p {
+  color: var(--clr-primary-light-coral);
+  font-size: 1rem;
+  margin-top: 1rem;
 }
 @media screen and (min-width: 700px) {
   .contact-bg-image-01 {
